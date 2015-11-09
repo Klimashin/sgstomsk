@@ -4,9 +4,6 @@
 /* @var $content string */
 
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
 AppAsset::register($this);
@@ -23,49 +20,81 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-
-<div class="wrap">
-    <?php
-    NavBar::begin([
-        'brandLabel' => 'My Company',
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
-            Yii::$app->user->isGuest ?
-                ['label' => 'Login', 'url' => ['/site/login']] :
-                [
-                    'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-                    'url' => ['/site/logout'],
-                    'linkOptions' => ['data-method' => 'post']
-                ],
-        ],
-    ]);
-    NavBar::end();
-    ?>
-
+<div class="header">
     <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
+        <div class="logo">
+                <a href="index.html"><img src="images/logo.png" class="img-responsive" alt="Я логотип =(" /></a>
+        </div>
+        <div class="head-nav">
+            <span class="menu"> </span>
+            <ul>
+                <li <?php if ($this->context->action->id == 'index'): ?>class="active"<?php endif; ?>><a href="index">Главная</a></li>
+                <li <?php if ($this->context->action->id == 'about'): ?>class="active"<?php endif; ?>><a href="about">О нас</a></li>
+                <li <?php if ($this->context->action->id == 'news'): ?>class="active"<?php endif; ?>><a href="news">Новости</a></li>
+                <li <?php if ($this->context->action->id == 'vacancies'): ?>class="active"<?php endif; ?>><a href="services">Вакансии</a></li>
+                <li <?php if ($this->context->action->id == 'contact'): ?>class="active"<?php endif; ?>><a href="contact">Связаться с нами</a></li>
+                <div class="clearfix"> </div>
+            </ul>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+
+<?php if ($this->context->action->id == 'index'): ?>
+<div class="header-bottom">
+    <div class="first">
+        <div class="photowrap photowrap-first">
+            <img src="http://www.gazprom.ru/f/posts/88/372364/1.jpg" class="bgimages" alt="Copy: unsplash.com"/>
+        </div>
+        <div class="container">
+            <div class="slid-banner">
+                <div  id="top" class="callbacks_container-wrap">
+                    <div class="contentwrap first-slide">
+                            <h1>ООО СПЕЦГЕОСТРОЙ</h1>
+                            <p>Комплексные проектно-изыскательные работы.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php endif; ?>
+
+<div class="main">
+    <div class="container">
         <?= $content ?>
     </div>
 </div>
 
-<footer class="footer">
+<!-- footer -->
+<div class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
+            <div class="col-md-4 footer-left">
+                <h4>Адрес</h4>
+                <div class="addr">
+                    <div class="icon">
+                            <i class="top"> </i>
+                    </div>
+                    <div class="data">
+                            <p>г.Томск, ул. Советская, д,26 </p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="addr-1">
+                        <div class="icon">
+                                <i class="mob"> </i>
+                        </div>
+                        <div class="data">
+                            <p>+7 (3822) 53-43-29</p>
+                            <h6>E-mail : <a href="mailto:info@company.com">sgs@mail.tomsknet.ru</a></h6>
+                        </div>
+                        <div class="clearfix"> </div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
     </div>
-</footer>
+</div>
+<!-- footer -->
 
 <?php $this->endBody() ?>
 </body>
