@@ -23,16 +23,16 @@ AppAsset::register($this);
 <div class="header">
     <div class="container">
         <div class="logo">
-                <a href="index.html"><img src="images/logo.png" class="img-responsive" alt="Я логотип =(" /></a>
+                <a href="/site/index"><img src="/img/logo.png" class="img-responsive logo" alt="Я логотип =(" /></a>
         </div>
         <div class="head-nav">
             <span class="menu"> </span>
             <ul>
-                <li <?php if ($this->context->action->id == 'index'): ?>class="active"<?php endif; ?>><a href="index">Главная</a></li>
-                <li <?php if ($this->context->action->id == 'about'): ?>class="active"<?php endif; ?>><a href="about">О нас</a></li>
-                <li <?php if ($this->context->action->id == 'news'): ?>class="active"<?php endif; ?>><a href="news">Новости</a></li>
-                <li <?php if ($this->context->action->id == 'vacancies'): ?>class="active"<?php endif; ?>><a href="services">Вакансии</a></li>
-                <li <?php if ($this->context->action->id == 'contact'): ?>class="active"<?php endif; ?>><a href="contact">Связаться с нами</a></li>
+                <li <?php if ($this->context->action->id == 'index'): ?>class="active"<?php endif; ?>><a href="/site/index">Главная</a></li>
+                <li <?php if ($this->context->action->id == 'about'): ?>class="active"<?php endif; ?>><a href="/site/about">О нас</a></li>
+                <li <?php if ($this->context->action->id == 'news'): ?>class="active"<?php endif; ?>><a href="/site/news">Новости</a></li>
+                <li <?php if ($this->context->action->id == 'vacancies'): ?>class="active"<?php endif; ?>><a href="/site/services">Вакансии</a></li>
+                <li <?php if ($this->context->action->id == 'contact'): ?>class="active"<?php endif; ?>><a href="/site/contact">Связаться с нами</a></li>
                 <div class="clearfix"> </div>
             </ul>
         </div>
@@ -44,7 +44,7 @@ AppAsset::register($this);
 <div class="header-bottom">
     <div class="first">
         <div class="photowrap photowrap-first">
-            <img src="http://www.gazprom.ru/f/posts/88/372364/1.jpg" class="bgimages" alt="Copy: unsplash.com"/>
+            <img src="/img/main.jpg" class="bgimages" alt="Copy: unsplash.com"/>
         </div>
         <div class="container">
             <div class="slid-banner">

@@ -7,23 +7,28 @@ use yii\helpers\Html;
 $this->title = 'About';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<h2>About Us</h2>
+<h2>О НАС</h2>
 <div class="about">
         <div class="col-md-8 about-data">
                 <div class="about-desc">
-                        <h4>Lorem Ipsum is simply dummy</h4>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum. </p>
-                        <span>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</span>
+                        <p>ООО «СПЕЦГЕОСТРОЙ» является многопрофильным предприятием, специализирующимся
+                            на оказании широкого спектра услуг в различных областях геологии, инженерных изысканий
+                            и проектирования гражданского и промышленного строительства на
+                            территории Сибири и сопредельных регионов. </p>
+                        <p>Коллектив предприятия насчитывает свыше 60 человек, более половины из которых
+                            - инженерно-технические работники, часть из которых специалисты с высокой квалификацией
+                            и большим опытом работы. </p>
+                        <p>ООО «СПЕЦГЕОСТРОЙ» обладает значительными материально-техническими ресурсами,
+                            включающими в себя собственное офисное помещение, производственно-техническую базу
+                            с ремонтно-буровым цехом, автотранспорт, буровое оборудование, компьютеры и
+                            копировально-множительную технику, а также различное современное программное обеспечение.</p>
+                        <p>Всё это позволяет оперативно, в сжатые сроки и с высоким качеством выполнять комплекс
+                            самых разных задач, стоящих перед недропользователями, предприятиями нефтегазового комплекса,
+                            строительными организациями, муниципалитетами, а также госучреждениями и частными лицами. </p>
                 </div>
                 <div class="about-img">
-                        <a href="#"><img src="images/img2.jpg" class="img-responsive" alt=""></a>
+                        <img src="img/about1.jpg" class="img-responsive" alt="">
                 </div>
-                <div class="clearfix"> </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
-                        <div class="rd_more">
-                                <a href="#" class="btn  btn-1c">Read More...</a>
-                        </div>
         </div>
         <div class="col-md-4 sidebar">
                 <h2>Recent Categories</h2>
