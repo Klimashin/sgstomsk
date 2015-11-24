@@ -541,7 +541,6 @@ i.in:hover{
 }
 .about-data p{
 	font-size: 1em;
-	color: #9C9C9C;
 	line-height: 1.8em;
 	margin: 1em 0em;
 }
@@ -578,6 +577,9 @@ i.in:hover{
 }
 .blog_desc {
 	margin: 1em 0em 1.5em;
+}
+.blog_posts img {
+    width: 200px;
 }
 /***Services*/
 .services{

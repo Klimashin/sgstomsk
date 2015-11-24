@@ -91,6 +91,24 @@ class SiteController extends Controller
 
     public function actionAbout()
     {
-        return $this->render('about');
+        $sertsDir = Yii::getAlias('@webroot') . '/img/serts/';
+        $sertsDirs = array_slice(scandir($sertsDir), 2);
+        $serts = [];
+
+        foreach ($sertsDirs as $sertName) {
+            $sertImgs = array_slice(scandir($sertsDir . $sertName), 2);
+            foreach ($sertImgs as $img) {
+                $serts[$sertName][] = "/img/serts/$sertName/$img";
+            }
+        }
+
+        return $this->render('about', [
+            'serts' => $serts,
+        ]);
+    }
+
+    public function actionVacancies()
+    {
+        return $this->render('vacancies');
     }
 }

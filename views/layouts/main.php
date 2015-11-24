@@ -31,7 +31,7 @@ AppAsset::register($this);
                 <li <?php if ($this->context->action->id == 'index'): ?>class="active"<?php endif; ?>><a href="/site/index">Главная</a></li>
                 <li <?php if ($this->context->action->id == 'about'): ?>class="active"<?php endif; ?>><a href="/site/about">О нас</a></li>
                 <li <?php if ($this->context->action->id == 'news'): ?>class="active"<?php endif; ?>><a href="/site/news">Новости</a></li>
-                <li <?php if ($this->context->action->id == 'vacancies'): ?>class="active"<?php endif; ?>><a href="/site/services">Вакансии</a></li>
+                <li <?php if ($this->context->action->id == 'vacancies'): ?>class="active"<?php endif; ?>><a href="/site/vacancies">Вакансии</a></li>
                 <li <?php if ($this->context->action->id == 'contact'): ?>class="active"<?php endif; ?>><a href="/site/contact">Связаться с нами</a></li>
                 <div class="clearfix"> </div>
             </ul>
