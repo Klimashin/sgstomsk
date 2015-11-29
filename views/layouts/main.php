@@ -91,7 +91,9 @@ AppAsset::register($this);
                         <div class="clearfix"> </div>
                 </div>
             </div>
-            <div class="clearfix"> </div>
+            <div class="col-md-4">
+                <h4><a href="/karta.doc" download>Карта предприятия</a></h4>
+            </div>
     </div>
 </div>
 <!-- footer -->

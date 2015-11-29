@@ -384,7 +384,7 @@ a.read:hover {
 i.top {
 	width: 24px;
 	height: 35px;
-	background: url(../images/top.png)no-repeat 0px 1px;
+	background: url(../img/top.png)no-repeat 0px 1px;
 	float: left;
 	vertical-align: middle;
 	display: block;
@@ -392,7 +392,7 @@ i.top {
 i.mob {
 	width: 20px;
 	height: 32px;
-	background: url(../images/mb.png)no-repeat 0px 1px;
+	background: url(../img/mb.png)no-repeat 0px 1px;
 	float: left;
 	vertical-align: middle;
 	display: block;
