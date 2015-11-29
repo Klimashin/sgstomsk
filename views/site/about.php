@@ -32,27 +32,68 @@ $this->params['breadcrumbs'][] = $this->title;
                 <li>ПРОЕКТИРОВАНИЕ ГОРНЫХ ОТВОДОВ (включая месторождения нефти и газа).</li>
                 <li>ЛАБОРАТОРНЫЕ ИССЛЕДОВАНИЯ ГРУНТОВ (физико-механические испытания, минералого-петрографические исследования).</li>
             </ol>
+            <h2 style="margin-top: 20px;">Допуски, лицензии, аттестаты</h2>
+            <ol>
+                <li>Свидетельство о допуске к работам по выполнению инженерных изысканий для строительства объектов капитального строительства, включая особо опасные и технически сложные. Серия 04-И №437 от 12 декабря 2014 г. СРО «Изыскательские организации Сибири».</li>
+                <li>Свидетельство о допуске на бурение и обустройство скважин (кроме нефтяных и газовых). № 0440.01-1012-7017107386-С-032 от 25 декабря 2012 г.</li>
+                <li>Свидетельство о допуске к работам по подготовке проектной документации объектов капитального строительства. №069-10 от 16 декабря 2014 г. СРО «Томское проектное объединение» (взамен ранее выданных: от 21.01.2010г. № 0069, от 27.12.2010г. № 0069-10, от 08.09.2011г. № 0069-10, от 13.10.2011г. № 0069-10, от 10.09.2013г. № 0069-10, от 02.04.2013г. № 0069-10).</li>
+                <li>Лицензия на производство маркшейдерских работ от 30 августа 2013 г.</li>
+                <li> Лицензия на осуществление работ, связанных с использованием сведений, составляющих государственную тайну.</li>
+                <li>Лицензия на осуществление геодезической деятельности №70-00001Г от 03.11.2010.</li>
+                <li>Лицензия на осуществление картографической деятельности №70-00008К от 05.03.2011.</li>
+                <li>Аттестат аккредитации испытательной лаборатории. №РОССRU. 0001.517683. Международный стандарт ИСО/МЭК 17025:2005.</li>
+                <li>Сертификация системы менеджмента качества на соответствие требованиям стандарта ГОСТ Р ИСО 9001-2008 (ISO 9001:2008)</li>
+            </ol>
         </div>
         <div class="col-md-4 sidebar">
             <h2>Лицензии И сертификаты</h2>
-            <div class="blog_posts">
-                <?php
+            <?php
+                $idCounter = 0;
                 foreach ($serts as $sertName => $sert) {
-                    foreach ($sert as $img) {
-                        echo "<img src='$img'/>";
-                    }
+                    $idCounter++;
+                    ?>
+            <div class="blog_posts">
+                <img src="<?= $sert[0] ?>" data-toggle="modal" data-target="#sertModal<?= $idCounter ?>"/>
+            </div>
+            <div class="modal fade" id="sertModal<?= $idCounter ?>" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title"><?= $sertName ?></h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="sertCarousel<?= $idCounter ?>" class="carousel slide carousel-fit" data-ride="carousel" data-interval="">
+                                 <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                <?php
+                                foreach ($sert as $i => $img) {
+                                    ?>
+                                    <div class="item <?php if ($i == 0) { echo 'active'; }?>">
+                                        <img src="<?= $img ?>" alt="<?= $sertName ?>">
+                                    </div>
+                                    <?php
+                                }
+
+                                ?>
+                                 <!-- Wrapper for slides -->
+                                </div>
+                                 <!-- Controls -->
+                                <a class="left carousel-control" href="#sertCarousel<?= $idCounter ?>" data-slide="prev">
+                                  <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#sertCarousel<?= $idCounter ?>" data-slide="next">
+                                  <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="modal-footer"></div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            <?php
                 }
                 ?>
-            </div>
-            <div class="blog_posts">
-
-            </div>
-            <div class="blog_posts">
-
-            </div>
-            <div class="blog_posts">
-
-            </div>
         </div>
         <div class="clearfix"> </div>
 </div>

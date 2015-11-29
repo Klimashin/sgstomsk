@@ -111,4 +111,9 @@ class SiteController extends Controller
     {
         return $this->render('vacancies');
     }
+
+    public function actionNews()
+    {
+        return $this->render('news');
+    }
 }

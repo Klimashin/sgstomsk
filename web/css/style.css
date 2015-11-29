@@ -15,6 +15,10 @@ html,body{
 .logo {
     max-height: 80px !important;
 }
+p {
+    text-align: justify;
+    margin: 10px 0;
+}
 body a{
     transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -580,6 +584,7 @@ i.in:hover{
 }
 .blog_posts img {
     width: 200px;
+    cursor: pointer;
 }
 /***Services*/
 .services{
