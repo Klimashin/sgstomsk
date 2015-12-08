@@ -8,7 +8,7 @@ $this->title = 'My Yii Application';
 <div class="welcome">
         <div class="container">
                 <h2>Добро Пожаловать!</h2>
-                <h6>Приветствуем Вас на официальном сайте специализированного геологического предприятия ООО СПЕЦГЕОСТРОЙ.</h6>
+                <h6>Приветствуем Вас на официальном сайте специализированного проектно-изыскательного предприятия ООО СПЕЦГЕОСТРОЙ.</h6>
         </div>
 </div>
 <!-- welcome -->
@@ -31,8 +31,8 @@ $this->title = 'My Yii Application';
                     </div>
                     <div class="col-md-4 wha-top1">
 
-                    </div>s
-                            <div class="clearfix"> </div>
+                    </div>
+                    <div class="clearfix"> </div>
             </div>
     </div>
 </div>
