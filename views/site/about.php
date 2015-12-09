@@ -3,9 +3,11 @@
 /* @var $this yii\web\View */
 
 use yii\helpers\Html;
+use app\assets\CompanyStructureAsset;
 
 $this->title = 'About';
 $this->params['breadcrumbs'][] = $this->title;
+CompanyStructureAsset::register($this);
 ?>
 <div class="about">
         <div class="col-md-8 about-data">
@@ -45,48 +47,23 @@ $this->params['breadcrumbs'][] = $this->title;
                 <li>Сертификация системы менеджмента качества на соответствие требованиям стандарта ГОСТ Р ИСО 9001-2008 (ISO 9001:2008)</li>
             </ol>
             <h2 style="margin-top: 20px;">Структура предприятия</h2>
-            <ul>
-                <li>Геологоразведочный отдел</li>
-                <li>Отдел проектирования карьеров</li>
-                <li>Гидрогеологический отдел</li>
-                <li>Картографический отдел</li>
-                <li>Департамент инженерных изысканий</li>
-                <li>Департамент проектных работ</li>
-                <li>Отдел инженерно-геодезических изысканий</li>
-                <li>Отдел инженерно-геологических изысканий</li>
-                <li>Отдел инженерно-экологических и гидрометеорологических изысканий</li>
-                <li>Геолого-литологическая лаборатория</li>
-                <li>Oтдел ГИП</li>
-                <li>Производственно-техническая  база (ПТБ)</li>
-                <li>Генеральный директор</li>
-                <li>Зам. ГД по общим вопросам</li>
-                <li>Главный геолог(1-й зам. ГД)</li>
-                <li>Главный инженер</li>
-                <li>Режимно-секретное подразделение</li>
-                <li>Финансово-правовой отдел</li>
-                <li>Бухгалтерия</li>
-                <li>Административно-хозяйственный отдел (АХО)</li>
-                <li>Инженер по ОТ и ПБ</li>
-                <li>Отдел кадров</li>
-                <li>Транспортный цех</li>
-                <li>Буровой цех</li>
-                <li>Отдел материально-технического снабжения</li>
-                <li>Юридический отдел</li>
-                <li>Отдел выпуска документации</li>
-                <li>Отдел смет</li>
-                <li>Служба главного энергетика (энерго, тепло и водоснабжение)</li>
-                <li>Хозяйственно-бытовая служба</li>
-                <li>Директор департамента</li>
-                <li>Секретарь делопроизводитель</li>
-                <li>Отдел генпланов и дорог</li>
-                <li>Строительный отдел</li>
-                <li>Электроэнергетический отдел</li>
-                <li>Отдел тепловодоснабжения и пожаротушения</li>
-                <li>Технологический отдел</li>
-                <li>Отдел смет и ПОС</li>
-                <li>Отдел автоматизации и связи</li>
-                <li>Экологический отдел</li>
-            </ul>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#structureModal">
+                Показать структуру предприятия
+            </button>
+            <div class="modal fade" id="structureModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" style="width:1300px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">Структура СЕЦГОСТРОЙ-ТОМСК</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container" id="company-structure" style="width:1224px; height: 1200px;"></div>
+                        </div>
+                        <div class="modal-footer"></div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
         </div>
         <div class="col-md-4 sidebar">
             <h2>Лицензии И сертификаты</h2>

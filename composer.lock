@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "76bcc4ce2b7340138ff90fb3719246c8",
-    "content-hash": "da9ae7dc7fe435c377179b5dd1235137",
+    "hash": "479407875c975e7dbee0aefcb85e62d5",
+    "content-hash": "5c27dd23827e5c153817a7f3f5d227c6",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -54,44 +54,6 @@
                 "mobile-first",
                 "responsive",
                 "web"
-            ]
-        },
-        {
-            "name": "bower-asset/bootstrap-modal-carousel",
-            "version": "v2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/noreiller/bootstrap-modal-carousel.git",
-                "reference": "aac9129c9368abb68807ba43f816d34d24458493"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/noreiller/bootstrap-modal-carousel/zipball/aac9129c9368abb68807ba43f816d34d24458493",
-                "reference": "aac9129c9368abb68807ba43f816d34d24458493",
-                "shasum": ""
-            },
-            "require-dev": {
-                "bower-asset/bootstrap": ">=3.1.1,<3.2",
-                "bower-asset/holderjs": ">=2.3.1,<2.4"
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": [
-                    "dist/css/bootstrap-modal-carousel.min.css",
-                    "dist/js/bootstrap-modal-carousel.min.js"
-                ],
-                "bower-asset-ignore": [
-                    "**/.*",
-                    "Gruntfile.js",
-                    "node_modules",
-                    "bower_components",
-                    "test",
-                    "tests",
-                    "src"
-                ]
-            },
-            "license": [
-                "MIT"
             ]
         },
         {
