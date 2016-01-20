@@ -23,7 +23,7 @@ AppAsset::register($this);
 <div class="header">
     <div class="container">
         <div class="logo">
-                <a href="/site/index"><img src="/img/logo.png" class="img-responsive logo" alt="Я логотип =(" /></a>
+                <a href="/site/index"><img src="/img/sgslogo.png" class="img-responsive logo" alt="Я логотип =(" /></a>
         </div>
         <div class="head-nav">
             <span class="menu"> </span>
@@ -44,7 +44,7 @@ AppAsset::register($this);
 <div class="header-bottom">
     <div class="first">
         <div class="photowrap photowrap-first">
-            <img src="/img/main.jpg" class="bgimages" alt="Copy: unsplash.com"/>
+            <img src="/img/main.jpg" class="bgimages img-responsive" alt="Copy: unsplash.com"/>
         </div>
         <div class="container">
             <div class="slid-banner">
