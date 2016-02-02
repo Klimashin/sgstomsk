@@ -22,6 +22,19 @@
     font-weight: bold;
 }
 
+.Treant > .node.node-main {
+    width: 400px;
+    max-width: none;
+}
+.node.node-main > p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.Treant > .node.department {
+    background-color: #eb9316;
+}
+
 .Treant.Treant-loaded .node,
 .Treant.Treant-loaded .pseudo { visibility: visible; }
 .Treant > .pseudo { width: 0; height: 0; border: none; padding: 0; }

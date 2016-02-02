@@ -7,6 +7,8 @@ use yii\helpers\Html;
 use app\assets\AppAsset;
 
 AppAsset::register($this);
+
+$this->title = 'СпецГеоСтрой';
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -20,14 +22,22 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-<div class="header">
+<nav class="header navbar navbar-default">
     <div class="container">
         <div class="logo">
-                <a href="/site/index"><img src="/img/sgslogo.png" class="img-responsive logo" alt="Я логотип =(" /></a>
+            <a href="/site/index"><img src="/img/sgslogo.png" class="img-responsive logo" alt="Я логотип =(" /></a>
         </div>
-        <div class="head-nav">
-            <span class="menu"> </span>
-            <ul>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div id="navbar" class="head-nav navbar-collapse collapse">
+            <ul class="nav navbar-nav">
                 <li <?php if ($this->context->action->id == 'index'): ?>class="active"<?php endif; ?>><a href="/site/index">Главная</a></li>
                 <li <?php if ($this->context->action->id == 'about'): ?>class="active"<?php endif; ?>><a href="/site/about">О нас</a></li>
                 <li <?php if ($this->context->action->id == 'news'): ?>class="active"<?php endif; ?>><a href="/site/news">Новости</a></li>
@@ -36,9 +46,8 @@ AppAsset::register($this);
                 <div class="clearfix"> </div>
             </ul>
         </div>
-        <div class="clearfix"> </div>
     </div>
-</div>
+</nav>
 
 <?php if ($this->context->action->id == 'index'): ?>
 <div class="header-bottom">
@@ -86,7 +95,7 @@ AppAsset::register($this);
                         </div>
                         <div class="data">
                             <p>+7 (3822) 53-43-29</p>
-                            <h6>E-mail : <a href="mailto:info@company.com">sgs@mail.tomsknet.ru</a></h6>
+                            <h6>E-mail : <a href="mailto:info@company.com">sgs@sgstomsk.ru</a></h6>
                         </div>
                         <div class="clearfix"> </div>
                 </div>
