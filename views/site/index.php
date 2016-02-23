@@ -34,6 +34,9 @@ $this->title = 'My Yii Application';
                     </div>
                     <div class="clearfix"> </div>
             </div>
+            <div class="container">
+                
+            </div>
     </div>
 </div>
 <!-- we do -->
