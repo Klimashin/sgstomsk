@@ -50,7 +50,7 @@ $this->title = 'СпецГеоСтрой';
 </nav>
 
 <?php if ($this->context->action->id == 'index'): ?>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-pause="none">
     <div class="first carousel-inner" role="listbox">
         <div class="item">
             <img src="/img/main1.jpg" class="bgimages img-responsive" alt="Copy: unsplash.com"/>
