@@ -126,7 +126,7 @@ $this->title = 'СпецГеоСтрой';
                 </div>
             </div>
             <div class="col-md-4">
-                <h4><a href="/karta.doc" download>Карточка предприятия</a></h4>
+                <h4><a href="/karta.pdf" download>Карточка предприятия</a></h4>
             </div>
     </div>
 </div>

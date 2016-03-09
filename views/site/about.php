@@ -75,7 +75,7 @@ CompanyStructureAsset::register($this);
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title">Структура СЕЦГОСТРОЙ-ТОМСК</h4>
+                            <h4 class="modal-title">Структура СПЕЦГЕОСТРОЙ-ТОМСК</h4>
                         </div>
                         <div class="modal-body">
                             <div class="container" id="company-structure" style="width:1224px; height: 1200px;"></div>

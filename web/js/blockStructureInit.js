@@ -53,6 +53,9 @@ var chart_config = {
                                 stackChildren: true,
                                 children: [
                                     {
+                                        text: { name: "Отдел полевых работ" }
+                                    },
+                                    {
                                         text: { name: "Отдел инженерно-геодезических изысканий" }
                                     },
                                     {
@@ -158,7 +161,7 @@ var chart_config = {
                         pseudo: true,
                         children: [
                             {
-                                text: { name: "Финасово правовой отдел" },
+                                text: { name: "Финасово-правовой отдел" },
                                 HTMLclass: 'department',
                                 stackChildren: true,
                                 children: [

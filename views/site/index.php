@@ -21,13 +21,16 @@ $this->title = 'My Yii Application';
                 и проектирования гражданского и промышленного строительства на территории Сибири и сопредельных регионов.</h6>
             <div class="wha-top">
                     <div class="col-md-4 wha-top1">
-                            <img src="/img/news1.jpg" class="img-responsive" alt="">
-                            <h4>ВТОРАЯ МЕЖДУНАРОДНАЯ КОНФЕРЕНЦИЯ "ГЕОЛОГОРАЗВЕДКА 2015"</h4>
-                            <p>11 ноября в Москве состоялась вторая ежегодная Международная конференция «Геологоразведка 2015»...</p>
-                            <a href="/site/news/#news1" class="btn  btn-1c">Читать...</a>
+                        <img src="/img/news1.jpg" class="img-responsive" alt="">
+                        <h4>ВТОРАЯ МЕЖДУНАРОДНАЯ КОНФЕРЕНЦИЯ "ГЕОЛОГОРАЗВЕДКА 2015"</h4>
+                        <p>11 ноября в Москве состоялась вторая ежегодная Международная конференция «Геологоразведка 2015»...</p>
+                        <a href="/site/news/#news1" class="btn  btn-1c">Читать...</a>
                     </div>
                     <div class="col-md-4 wha-top1">
-
+                        <img src="/img/news/3.jpg" class="img-responsive" alt="">
+                        <h4>Первое воскресенье апреля в России отмечается профессиональный праздник – «День геолога».</h4>
+                        <p>В этом году исполняется 50 лет со дня учреждения Указом Президиума Верховного Совета СССР «Дня геолога»...</p>
+                        <a href="/site/news/#news2" class="btn  btn-1c">Читать...</a>
                     </div>
                     <div class="col-md-4 wha-top1">
 
@@ -35,7 +38,7 @@ $this->title = 'My Yii Application';
                     <div class="clearfix"> </div>
             </div>
             <div class="container">
-                
+
             </div>
     </div>
 </div>
